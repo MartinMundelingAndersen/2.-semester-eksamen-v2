@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- husk en beskrivelse af siden i content -->
+    <meta name="description" content="Fremragende og saftige Grenache-vine med sødme og god syre, der passer perfekt til store middagsselskaber og til det danske julebord.">
+    <!-- husk unik title til alle sider -->
+    <title>FlexVine - Flex Christmas smagekasse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/smf5qns.css">
+    <!-- taget fra adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/abk0hlj.css">
+    <!-- taget fra adobe fonts -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo-burger">
+                <a href="index.html"><img src="images/flexvinelogo.jpg" alt="logo"></a>
+                <label for="toggle">&#9776;</label>
+            </div>
+            <!--dette er en checkbox som gør det muligt at folde burgermenuen ud, og den skal ligge udenfor de to divs-->
+            <input type="checkbox" id="toggle" class="hidden">
+
+            <div id="main-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Vores vine</button>
+                    <div class="dropdown-content">
+                        <a href="allevine.html">Alle vine</a>
+                        <a href="rodvine.html">Rødvin</a>
+                        <a href="hvidvine.html">Hvidvin</a>
+                        <a href="rosevin.html">Rosévin</a>
+                        <a href="smagkasser.html">Smagekasser</a>
+                        <a href="mad.html">Mad til vin</a>
+                    </div>
+                </div>
+                <a href="vinmagere.html">Vinmagere</a>
+                <a href="tilbud.html">Tilbud</a>
+                <a href="om-os.html">Om os</a>
+
+                <div class="search-box"><img src="icon/search-icon.png" id="icon2" alt="search"><input type="text" placeholder="Search.." required></div>
+
+                <a href="din-kurv.html"><img src="icon/basket-icon.png" id="icon" alt="til kurv"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="grad">
+            <br>
+            <div class="grid-container">
+
+                <div class="grid-item item1">
+                    <h1>Flex Christmas</h1>
+                </div>
+
+                <div class="grid-item item2">
+                    <div class="flex-container-vin">
+                        <img src="images/smagekasse1.jpg" alt="Flex Christmas" id="img-vine-information2">
+                    </div>
+                </div>
+                <br>
+
+                <div class="grid-item item3">
+                    <h3 style="color: white">1.200,- kr. inkl. moms</h3>
+                    <p style="color: white">Fremragende og saftige Grenache-vine med sødme og god syre,<br> der passer perfekt til store middagsselskaber og til det danske julebord.</p>
+                </div>
+                <div class="grid-item item4">
+                    <div class="flex-container-button">
+                        <button type="button" id="ned">-</button>
+                        <input type="text" value="0" id="antal">
+                        <button type="button" id="op">+</button>
+                    </div>
+                    <button type="button" class="button">Tilføj til kurv</button>
+                </div>
+
+                <div class="grid-item item5">
+                    <div class="flex-container-vin-information2">
+                        <h3>Beskrivelse</h3>
+                        <p>En smagekasse fyldt med Grenache-druer, der har præcis den sødme, alkohol og syre, der omfavner hele det danske julebord med akkuratesse.
+                            <br><br>
+                            Kassen indeholder:</p>
+                        <ul>
+                            <li>2. stk. Lao Muse 2014</li>
+                            <li>2. stk. Gigondas 2015</li>
+                            <li>2. stk. Gigondas Cuvée 2014</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div>
+            <p><b>Kontakt os</b></p>
+            <p>Søren Ferløv</p>
+            <p>Email: kontakt@flexvine.dk</p>
+            <p>Tlf:+45 20 99 13 57</p>
+            <p>CVR: 37545457</p>
+        </div>
+        <br>
+        <div>
+            <p><b>Betal med:</b></p>
+            <img src="icon/visa-icon.png" alt="Visa" class="footer-icon">
+            <img src="icon/mastercard-icon.png" alt="MasterCard" class="footer-icon">
+            <img src="icon/mobile-pay-icon.png" alt="MobilePay" class="footer-icon">
+        </div>
+        <br>
+        <div>
+            <p><b>Følg os</b></p>
+            <a href="https://www.facebook.com/FlexVine-1517572198550762/"><img src="icon/facebook-icon.png" alt="Facebook" class="footer-icon"></a>
+            <a href="https://www.instagram.com/flexvine/?hl=da"><img src="icon/instagram-icon.png" alt="Instagram" class="footer-icon"></a>
+        </div>
+        <br>
+    </footer>
+    <script src="tilfoej.js"></script>
+</body>
+
+</html>

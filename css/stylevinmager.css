@@ -1,0 +1,372 @@
+/*Style på vinmagere side*/
+
+/*-- Map styling inklusiv pop-up box--*/
+.no-margin {
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#h1kort {
+    font-size: 50px;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 120px;
+    margin: 0px;
+}
+
+
+#popUp {
+    position: absolute;
+    width: 450px;
+    background-color: white;
+    left: 45%;
+    top: 60%;
+    margin-left: -125px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#close {
+    width: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+}
+
+#kort {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#popUpHeader {
+    margin-bottom: 5px;
+    border-bottom: solid 1px white;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    font-style: normal;
+}
+
+#popUpContent p {
+    margin: 0px 10px 0px 10px;
+    padding: 0px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+
+/*Flexbox på Vinmagere side*/
+
+.flex-vinmagere {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    height: auto;
+}
+
+li {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
+    width: auto;
+    height: auto;
+    margin: 1em;
+}
+
+/* dette er lavet, så rækkefølgen på flexboxene bliver rigtigt på mobil siden*/
+
+#li-1 {
+    order: -10;
+}
+
+#li-2 {
+    order: -7;
+}
+
+#li-3 {
+    order: -6;
+}
+
+#li-4 {
+    order: -3;
+}
+
+#li-5 {
+    order: -2;
+}
+
+#li-6 {
+    order: -9;
+}
+
+#li-7 {
+    order: -8;
+}
+
+#li-8 {
+    order: -5;
+}
+
+#li-9 {
+    order: -4;
+}
+
+#li-10 {
+    order: -1;
+}
+
+
+
+.img-vinmagere {
+    width: 100%;
+    height: inherit;
+    border-radius: 20px;
+}
+
+.h1-flex-vinmager {
+    color: black;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.p-flex-vinmager {
+    text-align: left;
+    font-size: 15px;
+    line-height: 23px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+
+/*MEDIA QUERY  MOBILE */
+
+@media all and (max-width: 799px) {
+
+    /*-----vinmagere side-----*/
+
+    .p-vimagere {
+        display: none;
+    }
+
+    .under-p-vinmagere {
+        display: none;
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+    /* har sat det som display:none;, da mappen ikke vil fungere godt på mobil version */
+    #kort {
+        display: none;
+    }
+}
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 800px) {
+
+    /* har sat det som display:none;, da mappen ikke vil fungere godt på tablet version */
+    #kort {
+        display: none;
+    }
+
+    .p-vimagere {
+        display: none;
+    }
+
+    .under-p-vinmagere {
+        display: none;
+    }
+}
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+    .no-margin {
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #h1kort {
+        font-size: 60px;
+        font-family: all-round-gothic, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        padding-top: 120px;
+        margin: 0px;
+    }
+
+    .p-vimagere {
+        display: block;
+        color: white;
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: acumin-pro, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    .under-p-vinmagere {
+        display: block;
+        font-size: 15px;
+        color: white;
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+    #popUp {
+        position: fixed;
+        width: 580px;
+        background-color: white;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #close {
+        width: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 15px;
+    }
+
+    #kort {
+        display: block;
+        width: 1024px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    #popUpHeader {
+        margin-bottom: 5px;
+        border-bottom: solid 1px white;
+        font-family: all-round-gothic, sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        font-style: normal;
+    }
+
+    #popUpContent p {
+        margin: 0px 10px 0px 10px;
+        padding: 0px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+
+    /*Flexbox på Vinmagere side*/
+
+    .flex-vinmagere {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+        height: 220em;
+    }
+
+    li {
+        background: white;
+        border-radius: 18px;
+        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
+        width: 500px;
+        height: 40em;
+        margin: 1em;
+    }
+
+    .img-vinmagere {
+        width: 100%;
+        height: inherit;
+        border-radius: 20px;
+    }
+
+    .h1-flex-vinmager {
+        color: black;
+        font-size: 42px;
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 15px;
+    }
+
+    .p-flex-vinmager {
+        text-align: left;
+        font-size: 12px;
+        line-height: 17px;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    /* dette er lavet, så rækkefølgen på flexboxene bliver rigtigt på Web-siden*/
+
+    #li-1 {
+        order: -10;
+    }
+
+    #li-2 {
+        order: -9;
+    }
+
+    #li-3 {
+        order: -8;
+    }
+
+    #li-4 {
+        order: -7;
+    }
+
+    #li-5 {
+        order: -6;
+    }
+
+    #li-6 {
+        order: -5;
+    }
+
+    #li-7 {
+        order: -4;
+    }
+
+    #li-8 {
+        order: -3;
+    }
+
+    #li-9 {
+        order: -2;
+    }
+
+    #li-10 {
+        order: -1;
+    }
+
+}

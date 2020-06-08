@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- husk en beskrivelse af siden i content -->
+    <meta name="description" content="Her kan du se dine vare">
+    <!-- husk unik title til alle sider -->
+    <title>FlexVine - Din kurv</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/smf5qns.css">
+    <!-- taget fra adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/abk0hlj.css">
+    <!-- taget fra adobe fonts -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo-burger">
+                <a href="index.html"><img src="images/flexvinelogo.jpg" alt="logo"></a>
+                <label for="toggle">&#9776;</label>
+            </div>
+            <!--dette er en checkbox som gør det muligt at folde burgermenuen ud, og den skal ligge udenfor de to divs-->
+            <input type="checkbox" id="toggle" class="hidden">
+
+            <div id="main-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Vores vine</button>
+                    <div class="dropdown-content">
+                        <a href="allevine.html">Alle vine</a>
+                        <a href="rodvine.html">Rødvin</a>
+                        <a href="hvidvine.html">Hvidvin</a>
+                        <a href="rosevin.html">Rosévin</a>
+                        <a href="smagkasser.html">Smagekasser</a>
+                        <a href="mad.html">Mad til vin</a>
+                    </div>
+                </div>
+                <a href="vinmagere.html">Vinmagere</a>
+                <a href="tilbud.html">Tilbud</a>
+                <a href="om-os.html">Om os</a>
+
+                <div class="search-box"><img src="icon/search-icon.png" id="icon2" alt="search"><input type="text" placeholder="Search.." required></div>
+
+                <a href="din-kurv.html"><img src="icon/basket-icon.png" id="icon" alt="til kurv"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="grad">
+
+            <br>
+
+            <h1>Din kurv</h1>
+            <div class="flex-container-koeb">
+                <div>
+                    <img class="vinkoeb1" src="images/hvidvin1.jpg" alt="">
+                </div>
+                <div>
+                    <p>
+                        Pinot Blanc Clos
+                        Paradis 2014
+
+                    </p>
+                </div>
+
+                <div class="flex-container-antal">
+                    <input type="text" value="1" class="antalvine">
+
+                </div>
+
+                <div>
+                    <p>Ialt</p>
+                    <p>100 kr.</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="flex-container-koeb">
+                <div>
+                    <img class="vinkoeb1" src="images/rodvin2.jpg" alt="Loris 2013 AOP Faugéres">
+                </div>
+                <div>
+                    <p>
+                        Loris 2013 AOP Faugéres
+
+                    </p>
+                </div>
+
+                <div class="flex-container-antal">
+                    <input type="text" value="1" class="antalvine">
+
+                </div>
+
+                <div>
+                    <p>Ialt</p>
+                    <p>140 kr.</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="flex-container-kurv">
+                <h4 class="din-kurv-tekst">Pris</h4>
+                <h4 class="din-kurv-tekst">Rabat</h4>
+                <p id="prisograbat1"> 240 kr.</p>
+                <p id="prisograbat2">0 kr.</p>
+            </div>
+
+            <!-- Vi har via validering fået fejlen:  Attribute href not allowed on element button at this point. Knappen skal linke til et html dokument og derfor har vi brugt href. -->
+            <a href="trin1.html"> <button type="button" id="kassen">Gå til kassen</button></a>
+        </div>
+
+    </main>
+    <hr>
+    <footer>
+        <div>
+            <p><b>Kontakt os</b></p>
+            <p>Søren Ferløv</p>
+            <p>Email: kontakt@flexvine.dk</p>
+            <p>Tlf:+45 20 99 13 57</p>
+            <p>CVR: 37545457</p>
+        </div>
+        <br>
+        <div>
+            <p><b>Betal med:</b></p>
+            <img src="icon/visa-icon.png" alt="Visa" class="footer-icon">
+            <img src="icon/mastercard-icon.png" alt="MasterCard" class="footer-icon">
+            <img src="icon/mobile-pay-icon.png" alt="MobilePay" class="footer-icon">
+        </div>
+        <br>
+        <div>
+            <p><b>Følg os</b></p>
+            <a href="https://www.facebook.com/FlexVine-1517572198550762/"><img src="icon/facebook-icon.png" alt="Facebook" class="footer-icon"></a>
+            <a href="https://www.instagram.com/flexvine/?hl=da"><img src="icon/instagram-icon.png" alt="Instagram" class="footer-icon"></a>
+        </div>
+        <br>
+    </footer>
+    <script src="mitscript.js"></script>
+</body></html>

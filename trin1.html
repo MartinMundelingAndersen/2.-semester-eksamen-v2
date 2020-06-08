@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faktureringsoplysninger">
+    <title>Faktureringsoplysninger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/smf5qns.css">
+    <!-- taget fra adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/abk0hlj.css">
+    <!-- taget fra adobe fonts -->
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="logo-burger">
+                <a href="index.html"><img src="images/flexvinelogo.jpg" alt="logo"></a>
+                <label for="toggle">&#9776;</label>
+            </div>
+            <!--dette er en checkbox som gør det muligt at folde burgermenuen ud, og den skal ligge udenfor de to divs-->
+            <input type="checkbox" id="toggle" class="hidden">
+
+            <div id="main-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Vores vine</button>
+                    <div class="dropdown-content">
+                        <a href="allevine.html">Alle vine</a>
+                        <a href="rodvine.html">Rødvin</a>
+                        <a href="hvidvine.html">Hvidvin</a>
+                        <a href="rosevin.html">Rosévin</a>
+                        <a href="smagkasser.html">Smagekasser</a>
+                        <a href="mad.html">Mad til vin</a>
+                    </div>
+                </div>
+                <a href="vinmagere.html">Vinmagere</a>
+                <a href="tilbud.html">Tilbud</a>
+                <a href="om-os.html">Om os</a>
+
+                <div class="search-box"><img src="icon/search-icon.png" id="icon2" alt="search"><input type="text" placeholder="Search.." required></div>
+
+                <a href="din-kurv.html"><img src="icon/basket-icon.png" id="icon" alt="til kurv"></a>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+
+    <main>
+        <div id="grad">
+            <br>
+            <h2>Trin 1 af 3: Fakturerings-<br>oplysninger</h2>
+            <div class="flex-container-kvittering">
+
+                <!-- Vi har via validering, fået fejlen: Attribute "for" not allowed on element "div" at this point. Det rigtige element at bruge er <label>, men da vi har brugt <label> til at kode burgermenuen, forsvinder teksten når vi sætter dette element ind. Vi har fundet frem til at siden fungere som vi ønsker, såfremt vi bruger "div". Derfor har vi valgt at gå med dette -->
+
+                <div>
+                    <form>
+                        <div for="navn">Dit navn:</div><input type="text" id="navn"><br>
+                        <div for="adresse">Din adresse:</div><input type="text" id="adresse"><br>
+                        <div for="pogb">Postnr og by:</div><input type="text" id="pogb"><br>
+                        <button type="button" id="knap">Næste</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </main>
+    <hr>
+    <footer>
+        <div>
+            <p><b>Kontakt os</b></p>
+            <p>Søren Ferløv</p>
+            <p>Email: kontakt@flexvine.dk</p>
+            <p>Tlf:+45 20 99 13 57</p>
+            <p>CVR: 37545457</p>
+        </div>
+        <br>
+        <div>
+            <p><b>Betal med:</b></p>
+            <img src="icon/visa-icon.png" alt="Visa" class="footer-icon">
+            <img src="icon/mastercard-icon.png" alt="MasterCard" class="footer-icon">
+            <img src="icon/mobile-pay-icon.png" alt="MobilePay" class="footer-icon">
+        </div>
+        <br>
+        <div>
+            <p><b>Følg os</b></p>
+            <a href="https://www.facebook.com/FlexVine-1517572198550762/"><img src="icon/facebook-icon.png" alt="Facebook" class="footer-icon"></a>
+            <a href="https://www.instagram.com/flexvine/?hl=da"><img src="icon/instagram-icon.png" alt="Instagram" class="footer-icon"></a>
+        </div>
+        <br>
+    </footer>
+    <script src="trin1.js"></script>
+</body></html>

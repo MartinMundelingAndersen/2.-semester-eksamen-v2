@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- husk en beskrivelse af siden i content -->
+    <meta name="description" content="FlexVine samarbejder med Le Clos de Caveau, Mas des Capitelles, Vincent Scoepfer, Les Teyssonnières, og Meinardi som giver dig det bedste inden for fransk og italiensk vin. ">
+    <!-- husk unik title til alle sider -->
+    <title>FlexVine - Vinmagere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylevinmager.css">
+    <link rel="stylesheet" href="https://use.typekit.net/smf5qns.css">
+    <!-- taget fra adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/abk0hlj.css">
+    <!-- taget fra adobe fonts -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo-burger">
+                <a href="index.html"><img src="images/flexvinelogo.jpg" alt="logo"></a>
+                <label for="toggle">&#9776;</label>
+            </div>
+            <!--dette er en checkbox som gør det muligt at folde burgermenuen ud, og den skal ligge udenfor de to divs-->
+            <input type="checkbox" id="toggle" class="hidden">
+
+            <div id="main-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Vores vine</button>
+                    <div class="dropdown-content">
+                        <a href="allevine.html">Alle vine</a>
+                        <a href="rodvine.html">Rødvin</a>
+                        <a href="hvidvine.html">Hvidvin</a>
+                        <a href="rosevin.html">Rosévin</a>
+                        <a href="smagkasser.html">Smagekasser</a>
+                        <a href="mad.html">Mad til vin</a>
+                    </div>
+                </div>
+                <a href="vinmagere.html" class="aktiv-menu">Vinmagere</a>
+                <a href="tilbud.html">Tilbud</a>
+                <a href="om-os.html">Om os</a>
+
+                <div class="search-box"><img src="icon/search-icon.png" id="icon2" alt="search"><input type="text" placeholder="Search.." required></div>
+
+                <a href="din-kurv.html"><img src="icon/basket-icon.png" id="icon" alt="til kurv"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="no-margin">
+        <div id="grad">
+            <h1 id="h1kort">Vinmagere</h1>
+            <p class="p-vimagere">På denne side, kan du læse om vores fantatiske vinmagere rundt omkring i Frankrig og Italien. <br>Nedenfor kan du se 2 kort over henholdsvis Frankrig og Italien. Du kan klikke på de forskellige nåle på billedet, og kort læse om de vingårde vi samarbejder med. <br> Hvis du har god tid, og går lige så meget op i historien om vine, kan du scroll længere ned på siden, og finde en større og mere beskrivende historie omkring hver vingård.</p>
+            <p class="under-p-vinmagere"><b>TRYK PÅ KORTET OG LÆS OM VORES VINGÅRDE</b></p>
+
+            <!-- Mappen -->
+            <img id="kort" src="images/franital.png" alt="Kort over Frankrig og Italien" usemap="#map">
+            <map name="map">
+                <!-- Tilføj evt. \n\r hvis <br> ikke fungere-->
+
+                <!-- Vi har via validering fået fejlen: Element area is missing required attribute href. Hvis man tilføjer href til element området, vil det fungere som et link og ikke en pop-up box. Hvilket vil sige at pop-up boxen kun er synlig et kort øjeblik. Derfor har vi valgt at ignorere denne fejl -->
+                <!-- 1 -->
+                <area shape="circle" coords="369,214,20" onclick="MapPopUp('<u>Vincent Schopfer</u>','Vingården Vincent Schopfer ligger i den østlige del af frankrig, i en gammel middelalderby. <br>Det er her mange af vores hvidvine kommer fra. <br> Ejerene af Vincent Schopfer er brødrene Thierry og Vincent. <br> Vingården har eksisteret siden 1665, og brødrene er 15. generation af vinbønder. Familien råder i dag over 12 hektar vinstokke, og yderligere 5 hektar bliver tilføjet indenfor det næste års tid.')" alt="placering på vingaarden Vincent Schopfer">
+
+                <area shape="circle" coords="351,373,19" onclick="MapPopUp('<u>Clos De Caveau  &amp; <br> Les Teyssonnières</u>','Begge vingårde er placeret i den sydøstlige Frankrig. De er placeret på hver sin side af byen Gigondas. Det er i dette område kun rødvin, som bliver dyrket. <br><br> <b>Clos De Cavaeu´s</b> ejer, Henri, købte vingården tilbage i 1976. Han vingård er sidenhen blevet den første der 1989 (i Vacqueyras og Gigondas området), der fik certifikationen biologiske/økologiske vindyrkelse. <br><br> <b>Les Teyssonnières</b> er en vingård som blev startede tilbage i 1838 af Franck Alexandre. I dag er det ejet af hans tip tip oldebarn med samme navn. Deres vingård dækker over 12 hektar i området hvor de dyrker rødvinen')" alt="placering på vingaardene Clos De Caveau og Les Teyssonnières">
+
+                <area shape="circle" coords="272,391,22" onclick="MapPopUp('<u>Mas des Capitelles</u>','Vingården er placeret I den lille by Faugéres på en lille sydvendt bjergside i Languedoc tæt på middelhavet. <br> Det er her ejerne, Jean Laugé og hans søn driver deres vingård. De er 10. Generation af landmænd, hvoraf de sidste 3. generationer udelukkende har arbejdet med og dyrket vin. <br> De arbejder traditionelt på deres vingård, der er præget af en tør og sydvendt bjergside, hvor stokkene er mellem 60 og 100 år gamle, og alle druer bliver håndhøstet.')" alt="placering på vingaarden Mas des Capitelles">
+
+                <area shape="circle" coords="652,164,24" onclick="MapPopUp('<u>Meinardi</u>','Vingården ligger i den vest-nordlige del af Italien. Det er her ejeren Corrado Meinardi dyrker nogle af de bedste vin i verdenen. De dyrker stadig deres vin på den helt traditionelle måde, ligesom Pierin, der er tipoldefar til den nuvræende ejer, plejede at gøre. Deres vin bliver dyrket på 3 D.O.C vine og 2 D.O.C.G, som bliver betragtet som en af de bedste området man kan dyrke vin på, i Italien.')" alt="placering på vingaarden Meinardi">
+            </map>
+
+            <div id="popUp" class="hidden">
+                <h3 id="popUpHeader">Titel</h3>
+                <p id="popUpContent"></p>
+                <div>
+                    <a onclick="CloseMapPopUp();">
+                        <img id="close" src="images/close.png" alt="close button">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Nedenfor er et flexbox system, hvori jeg har sat hver vinmagere og et billede ved siden af hinanden -->
+            <ul class="flex-vinmagere">
+                <li id="li-1">
+                    <h1 class="h1-flex-vinmager">Clos De Caveau
+                    </h1>
+
+                    <p class="p-flex-vinmager">Første gang vi mødte Henri Bungener var i sommeren 2014.
+                        Her opdagede vi, at på toppen af Vacqueyras laver de helt unikke vertikale vine med stor karakter og smag. <br><br>
+
+                        Henri overtog vingården fra sin fader i 1994, der havde købt gården i 1976 af Steven Spurrier (velrenommeret vinekspert).
+                        Faderen var en af de første, der var fast indstillet på, at jorden skulle drives biodynamisk, hvilket var meget kontroversielt i slut 70érne – start 80’erne. Men han holdt ved og stod fast, så Le Clos de Caveau i dag står som en fremragende arkitekt og banebryder indenfor biodynamisk vindyrkning og de blev de første der 1989 (Vacqueyras og Gigondas), der fik certifikationen biologiske/økologiske. <br> <br>
+
+                        I Henris unge dage gik han og havde fornemmelsen af, at vinen kunne laves endnu bedre, så da han overtog gården, lavede han 12 forskellige blandinger af druerne for at finde frem til præcise blanding, der gav den bedste smag, sammenhæng og udtryk.
+                        De forskellige parceller, hvor henholdsvis Grenache og Syrah druerne vokser, giver forskellige smag afhængig af, hvor på grunden de vokser – herunder hvilken højdemeter de står på. Alt dette kræver præcision, omtanke og akkuratesse, og det har han i mangefold. <br><br>
+
+                        På grunden dyrkes stokkene med nænsomhed og med mange års erfaring, der har givet en ekstrem stærk koncentration, og et ubeskriveligt godt ”Terroir” bestående primært af ler, limesten og kalk. Eksemplificeret ved deres ”Lao Muse”, der kun bliver produceret i udvalgte år – og kun mellem 1000 til 2800 flasker. <br><br>
+
+                        Lokationen med 12 hektar vinmarker og 8 hektar skov er en fantastisk beliggenhed med højdemeter og træer, der omgiver hele grunden. Henri fortæller, at skoven beskytter vinmarkerne og skaber biodiversitet, som er nødvendig for de økologiske vinstokke. F.eks. kan der være flere insekter pga. træerne, men samtidigt er der flere fugle, som skaber et økologisk miljø – og selvsagt virker Mistralvinden som en hårtørrer efter regnen. <br><br>
+
+                        Vinene fra Le Clos Caveau er fyldige og kraftfulde med silkebløde tanniner og passer perfekt til det danske køkken.
+                    </p>
+                </li>
+                <li id="li-2"><img class="img-vinmagere" src="images/vinmager-mas-des-capitelles-skilt.jpg" alt="Vingården Mas Des Capitelles"></li>
+                <li id="li-3">
+                    <h1 class="h1-flex-vinmager">Vincent Scoepfer</h1>
+                    <p class="p-flex-vinmager">I sommeren 2017 besøgte vi Alsace i Frankrig, hvilket var en stor og berigende oplevelse. Modsat mange andre vinområder vi har besøgt, så ligger parcellerne side om side på bjergene, mens byerne og bygninger er samlet ved foden af bjerget. <br><br>
+
+                        Vi var så heldige, at vi mødte Thierry og hans broder Vincent i deres vinhus ”Vincent Scoepfer”, der er diskret placeret i den hyggelige by Eguisheim.
+                        De har eksisteret siden 1656, og de er 15. generation af vinbønder, så det er en lang historie indenfor vinproduktion, familien har bag sig. Familien råder i dag over 12 hektar vinstokke, og yderligere 5 hektar bliver tilføjet indenfor det næste års tid. <br><br>
+
+                        Lignelsen om ”Den fortabte søn” er på sin egen måde historien om Thierry og hans broder. Thierry drog som ung ud i verden og begyndte at arbejde for et stort internationalt vinfirma. De næste 23 år rejste han verden rundt og besøgte vingårde – både de små og de store, og han oparbejdede herigennem en kæmpe indsigt i vinfremstilling og i de forskellige terroir og deres betydning.
+                        Da hans forældre ville trække sig tilbage, valgte Thierry at vende tilbage til sin hjemstavns vingård, hvor hans broder i alle årene havde arbejdet på familiens vingård. Det bør dog nævnes, at dette er det eneste punkt, hvor lignelsen om “Den fortabte søn” ligner Thierry og hans broder. <br><br>
+
+                        En af de erfaringer, Thierry havde fået med sig, var, at en for stor del restsukker giver for meget ”supermarkedssmag” efter hans opfattelse. Derfor arbejder de med at holde restsukkeret på et minimalt niveau – eller næsten intet restsukker – i hele deres produktion, hvorfor deres vine rammer den exceptionelle smag, som er med til at gøre deres vine helt enestående. Deres efterbehandling af vinen er også kompleks, da alle de hvide vine, de producerer, går igennem eg, hvilket er ekstraordinært for Alsace.
+                        De har både 1200 liter egetønder og helt op til 5100 liter store egetønder, der varierer meget i alder. Den ældste egevintønde på 5100 liter er mere end 150 år gammel, så den kan kun afgive en lille del af fadsmagen – men om end en betydningsfuld smag. Alle druerne bliver håndhøstet, da familien ved, at selekteringen af druerne giver den bedste smag. Brugen af maskiner er helt udelukket i høstningen af deres marker. <br><br>
+                    </p>
+                </li>
+
+                <li id="li-4"><img class="img-vinmagere" src="images/vinmager-les-Teyssonnieres.jpg" alt="Vingården Les Teyssonnieres"></li>
+
+                <li id="li-5">
+                    <h1 class="h1-flex-vinmager">
+                        Domaine les Teyssonnières
+                    </h1>
+                    <!-- Den nedstående tekst er taget fra http://www.chateauneuf.dk/gigondas/gig47.htm -->
+                    <p class="p-flex-vinmager"> Domænet er et familiedomæne, som blev etableret i 1838. <br> Franck Alexandre er 4 generation af familien på stedet. Hans oldefar var en murer fra Savoien, der kom til Gigondas for at arbejde ved opførelsen af Chateau Raspail og fandt byen og dens vine så attraktive, at han købte den ejendom, der nu er blevet til Domaine les Teyssonnières. <br><br>
+                        Der hører 12 ha. til domænet: 10 ha. Gigondas, 1 ha. Cotes du Rhone og 1 ha. IGP <br><br>
+                        Halvdelen af produktionen sælges til Perrin et Fils, som bruger den til Gigondas les Gilles og i gode år til Gigondas Vieilles Vignes. <br><br><br><br><br> <u>UNDER OPBYGNING</u></p>
+                </li>
+
+                <li id="li-6"><img class="img-vinmagere" src="images/vinmager-le-clos-top.jpg" alt="Vingården Le Clos"></li>
+
+                <li id="li-7">
+                    <h1 class="h1-flex-vinmager">Mas Des Capitelles</h1>
+                    <p class="p-flex-vinmager">I den lille by Faugéres på en lille sydvendt bjergside i Languedoc tæt på middelhavet, finder vi Mas des Capitelles. <br><br>
+
+                        Med 24 hektar vinstokke, der står i 250 meters højde og smiler ud mod Middelhavet og nyder den stærke sol og Mistralvinden, er dette det nye (gamle) område, der blomstrer enormt disse år. Med tilgangen af højtuddannede ønologer og vinfolk bl.a. fra Bordeaux og fra pengestærke folk fra hele verden, er Lanquedoc gået fra at være et område, der satsede på kvantitet til et område, der emner af stor kvalitet, hvilket gør det til et af de mest interessante områder i Frankrig i disse år. <br><br>
+
+                        Vingården er opkaldt efter de små kapeller, som de gamle hyrder overnattede i, når de drog op af bjerget og skulle bruge husly. Kapellerne er en byggemæssig udfordring pga. deres kompleksitet. Der er 2 små kapeller på deres vinmarker. <br><br>
+
+                        Da vi første gang besøgte dem i 2016 og mødte Jean Laugé og hans søn. Hans søn kom først senere på eftermiddagen.
+                        Grunden til, at der gik et par timer, før sønnen var til stede, er, at de ofte starter dagens arbejde kl. 4.00 om morgenen i vinmarkerne, hvor de arbejder til kl. ca. 10.00, hvorefter de fortrækker til skyggen, da solen er for stærk i løbet af dagen, og derfor umuliggør arbejdet i markerne. Sidst på dagen, når solen trækker sig tilbage, påbegynder igen arbejdet i markerne. <br><br>
+
+                        De er meget bevidste omkring, hvordan de vil dyrke jorden og beskytte den i fremtiden, ligesom de mener, at det er afgørende at håndtere den optimalt – derfor er de organiske og biodynamiske i deres arbejde og har været det siden 2011. Processen imod organisk og biodynamisk vinbrug startede i 2007. <br><br>
+
+                        De er 10. Generation af landmænd, hvoraf de sidste 3. generationer udelukkende har arbejdet med og dyrket vin. De arbejder traditionelt på deres vingård, der er præget af en tør og sydvendt bjergside, hvor stokkene er mellem 60 og 100 år gamle, og alle druer bliver håndhøstet. <br><br>
+
+                    </p>
+                </li>
+
+                <!-- billedet taget fra http://www.chateauneuf.dk/gigondas/gig47.htm -->
+                <li id="li-8"><img class="img-vinmagere" src="images/vinmager-vincent-scoepfer-top-3.jpg" alt="Vingården Vincent Scoepfer">
+                </li>
+                <li id="li-9">
+                    <h1 class="h1-flex-vinmager">Meinardi</h1>
+
+                    <p class="p-flex-vinmager">Treiso er en typisk by beliggende i Nedre Langa blandt bølgende bakker, et stærkt og generøst terræn, der overfører disse egenskaber til de vin, der er produceret i dette område. <br><br> Et område, der med tre DOC og to DOCG-vine kan betragtes som en af de bedste i verden. På disse bakker har gården "IL CRAVÉ" i fire generationer produceret kvalitetsvine med respekt for naturen og bevidst begrænset mængderne af druer produceret pr. hektar. <br> <br> Vinificeringen er stadig den traditionelle metode med metoder, som "bedstefar Pierin" ønskede at formidle vider til barnebarnet Corrado Meinardi, som i dag er ejer af virksomheden. <br><br><br><br><br> <u>UNDER OPBYGNING</u></p>
+                </li>
+
+
+                <li id="li-10"><img class="img-vinmagere" src="images/Domaine-les-Teyssonnieres.jpg" alt="Vingården Domaine les Teyssonnieres"></li>
+            </ul>
+
+        </div>
+
+        <script src="mitscript.js"></script>
+    </main>
+    <hr>
+    <footer>
+        <div>
+            <p><b>Kontakt os</b></p>
+            <p>Søren Ferløv</p>
+            <p>Email: kontakt@flexvine.dk</p>
+            <p>Tlf:+45 20 99 13 57</p>
+            <p>CVR: 37545457</p>
+        </div>
+        <br>
+        <div>
+            <p><b>Betal med:</b></p>
+            <img src="icon/visa-icon.png" alt="Visa" class="footer-icon">
+            <img src="icon/mastercard-icon.png" alt="MasterCard" class="footer-icon">
+            <img src="icon/mobile-pay-icon.png" alt="MobilePay" class="footer-icon">
+        </div>
+        <br>
+        <div>
+            <p><b>Følg os</b></p>
+            <a href="https://www.facebook.com/FlexVine-1517572198550762/"><img src="icon/facebook-icon.png" alt="Facebook" class="footer-icon"></a>
+            <a href="https://www.instagram.com/flexvine/?hl=da"><img src="icon/instagram-icon.png" alt="Instagram" class="footer-icon"></a>
+        </div>
+        <br>
+    </footer>
+    <script src="vinmagere.js"></script>
+</body>
+
+</html>
