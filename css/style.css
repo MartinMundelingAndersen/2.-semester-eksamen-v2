@@ -246,10 +246,6 @@ label {
     font-style: normal;
 }
 
-ul {
-    margin-left: 50px;
-}
-
 /* intro video*/
 .intro-video {
     width: 100%;
@@ -858,7 +854,8 @@ footer {
     #img-vine-information2 {
         min-width: 400px;
         max-height: 300px;
-        border-radius: 20%;
+        border-radius: 10%;
+        margin-top: 100px;
     }
 
     /* grid-box */
@@ -1000,7 +997,7 @@ footer {
 
         .flex-container-soeren {
             margin-left: 300px;
-            margin-right: 400px;
+            margin-right: 300px;
             padding-left: 100px;
             border-radius: 100px;
         }
