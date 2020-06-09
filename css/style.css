@@ -180,6 +180,7 @@ h1 {
     color: white;
     text-align: center;
     font-size: 60px;
+
 }
 
 /* overskrifter, underoverskrifter og brødtekst */
@@ -601,15 +602,20 @@ ul {
 .flex-container-kontakt {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: white;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    margin-bottom: 2%;
     padding: 20px 60px 20px 60px;
     border-radius: 20px;
     text-align: center;
     justify-content: center;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
+    min-width: 50%;
 }
 
 .flex-container-koeb {
@@ -698,7 +704,12 @@ footer {
 
 }
 
-
+#anmeldelser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 
 
@@ -1112,4 +1123,12 @@ footer {
             grid-row: 6;
         }
     }
+
+    .flex-container-kvittering,
+    .flex-container-kontakt {
+        margin-left: 25%;
+        margin-right: 40%;
+    }
+
+
 }

@@ -52,24 +52,46 @@
 
     <main>
         <div id="grad">
+            <h1>Faktureringsoplysninger</h1>
             <br>
-            <h2>Trin 1 af 3: Fakturerings-<br>oplysninger</h2>
+            <h2>Dine oplysninger</h2>
             <div class="flex-container-kvittering">
 
-                <!-- Vi har via validering, fået fejlen: Attribute "for" not allowed on element "div" at this point. Det rigtige element at bruge er <label>, men da vi har brugt <label> til at kode burgermenuen, forsvinder teksten når vi sætter dette element ind. Vi har fundet frem til at siden fungere som vi ønsker, såfremt vi bruger "div". Derfor har vi valgt at gå med dette -->
 
                 <div>
                     <form>
-                        <div for="navn">Dit navn:</div><input type="text" id="navn"><br>
-                        <div for="adresse">Din adresse:</div><input type="text" id="adresse"><br>
-                        <div for="pogb">Postnr og by:</div><input type="text" id="pogb"><br>
-                        <button type="button" id="knap">Næste</button>
+                        <label2 for="navn">Dit navn:<br></label2><input type="text" id="navn"><br>
+                        <label2 for="adresse">Din adresse:<br></label2>
+                        <input type="text" id="adresse" name="adresse" list="adresser"><br>
+                        <label2 for="pogb">Postnr og by:<br></label2><input type="text" id="pogb" name="postnr-by" list="postnr"><br>
+                        <label2 for="email">Email:<br></label2><input type="text" id="email"><br>
                     </form>
+                    <datalist id="adresser">
+                    </datalist>
+                    <datalist id="postnr">
+                    </datalist>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
+
+
+            <h2>Levering</h2>
+            <div class="flex-container-kvittering">
+
+                <form>
+                    <input type="radio" name="levering" value="Personlig levering" checked>Personlig levering<br>
+                    <input type="radio" name="levering" value="Afhentning">Afhentning<br>
+                </form>
+            </div>
+            <h2>Betalingsmuligheder</h2>
+            <div class="flex-container-kvittering">
+
+                <form>
+                    <input type="radio" name="betaling" value="Visa/Dankort" checked>Visa/Dankort<br>
+                    <input type="radio" name="betaling" value="Mastercard">Mastercard<br>
+                    <input type="radio" name="betaling" value="MobilePay">MobilePay<br><br>
+                    <button type="button" id="knap">Til kvittering</button>
+                </form>
+            </div>
         </div>
 
     </main>
