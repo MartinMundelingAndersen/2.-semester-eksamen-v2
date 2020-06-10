@@ -705,6 +705,8 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -933,193 +935,199 @@ footer {
         border-radius: 20%;
     }
 
-
-
-
-
-
-
-
-    /*MEDIA QUERY LAPTOP AND ABOVE*/
-
-    @media all and (min-width: 1024px) {
-
-        /* NAVIGATION */
-        nav {
-            flex-direction: row;
-        }
-
-        /* intro video */
-        .intro-video {
-            margin-top: 55px;
-        }
-
-        /* vin undersider */
-        .flex-container-vin-forside {
-            flex-direction: row;
-            margin-top: 60px;
-        }
-
-        .flex-container-vin {
-            margin: 0px 200px 0px 200px;
-        }
-
-        .flex-container-text1 {
-            display: flex;
-            text-align: left;
-        }
-
-        .flex-container-text2 {
-            display: flex;
-            text-align: left;
-        }
-
-        #img-vinmagere-forside {
-            display: block;
-            max-width: 520px;
-            max-height: 360px;
-            min-height: 360px;
-            border-radius: 30px;
-        }
-
-        #img-soeren {
-            margin-top: -5px;
-            margin-left: 280px;
-        }
-
-        #img-smagkasser-forside {
-            display: block;
-            max-width: 520px;
-            max-height: 360px;
-            min-height: 360px;
-            border-radius: 30px;
-        }
-
-        .flex-container-soeren {
-            margin-left: 300px;
-            margin-right: 300px;
-            padding-left: 100px;
-            border-radius: 100px;
-        }
-
-        .button-forside {
-            margin-left: 50px;
-        }
-
-        #img-vine {
-            max-width: 300px;
-            max-height: 700px;
-        }
-
-        .flex-container-om,
-        .flex-container-fisk {
-            display: flex;
-        }
-
-        #billede-om {
-            width: 45%;
-            border-radius: 0 20px 20px 0;
-        }
-
-        #vin-plante {
-            width: 45%;
-            border-radius: 0 20px 20px 0;
-        }
-
-        .flex-container-vin-information {
-            margin: auto 0;
-        }
-
-        .flex-container-vin-information2 {
-            margin: auto 0;
-        }
-
-        .flex-container-koeb {
-            width: 50%;
-            margin: 0 auto;
-            margin-top: 5px;
-            box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
-        }
-
-        .flex-container-kurv {
-            width: 50%;
-            margin: 0 auto;
-            margin-top: 5px;
-        }
-
-
-        #kassen {
-            width: 15%;
-            margin-top: 2px;
-        }
-
-        .flex-container-fisk {
-            display: flex;
-            justify-content: center;
-        }
-
-        .grid-container-fisk {
-            display: grid;
-            grid-template-columns: 420px 500px;
-            grid-gap: 10px;
-            padding: 10px;
-        }
-
-        .grid-item {
-            text-align: center;
-            padding: 5px;
-        }
-
-        .fisk-item1 {
-            grid-column: 1 / span 3;
-            grid-row: 1;
-        }
-
-        .fisk-item2 {
-            grid-column: 1;
-            grid-row: 2 / span 2;
-        }
-
-        .fisk-item3 {
-            grid-column: 1;
-            grid-row: 4 / span 2;
-        }
-
-        .fisk-item4 {
-            grid-column: 2 / span 2;
-            grid-row: 2;
-        }
-
-        .fisk-item5 {
-            grid-column: 2 / span 2;
-            grid-row: 3;
-        }
-
-        .fisk-item6 {
-            grid-column: 2 / span 2;
-            grid-row: 4;
-        }
-
-        .fisk-item7 {
-            grid-column: 2 / span 2;
-            grid-row: 5;
-        }
-
-        .fisk-item8 {
-            grid-column: 3;
-            grid-row: 5;
-        }
-
-        .fisk-item9 {
-            grid-column: 2;
-            grid-row: 6;
-        }
-
-        .fisk-item10 {
-            grid-column: 3;
-            grid-row: 6;
-        }
+    .flex-container-anbefaling {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
     }
+
+}
+
+
+
+
+
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+    /* NAVIGATION */
+    nav {
+        flex-direction: row;
+    }
+
+    /* intro video */
+    .intro-video {
+        margin-top: 55px;
+    }
+
+    /* vin undersider */
+    .flex-container-vin-forside {
+        flex-direction: row;
+        margin-top: 60px;
+    }
+
+    .flex-container-vin {
+        margin: 0px 200px 0px 200px;
+    }
+
+    .flex-container-text1 {
+        display: flex;
+        text-align: left;
+    }
+
+    .flex-container-text2 {
+        display: flex;
+        text-align: left;
+    }
+
+    #img-vinmagere-forside {
+        display: block;
+        max-width: 520px;
+        max-height: 360px;
+        min-height: 360px;
+        border-radius: 30px;
+    }
+
+    #img-soeren {
+        margin-top: -5px;
+        margin-left: 280px;
+    }
+
+    #img-smagkasser-forside {
+        display: block;
+        max-width: 520px;
+        max-height: 360px;
+        min-height: 360px;
+        border-radius: 30px;
+    }
+
+    .flex-container-soeren {
+        margin-left: 300px;
+        margin-right: 300px;
+        padding-left: 100px;
+        border-radius: 100px;
+    }
+
+    .button-forside {
+        margin-left: 50px;
+    }
+
+    #img-vine {
+        max-width: 300px;
+        max-height: 700px;
+    }
+
+    .flex-container-om,
+    .flex-container-fisk {
+        display: flex;
+    }
+
+    #billede-om {
+        width: 45%;
+        border-radius: 0 20px 20px 0;
+    }
+
+    #vin-plante {
+        width: 45%;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .flex-container-vin-information {
+        margin: auto 0;
+    }
+
+    .flex-container-vin-information2 {
+        margin: auto 0;
+    }
+
+    .flex-container-koeb {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 5px;
+        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
+    }
+
+    .flex-container-kurv {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+
+    #kassen {
+        width: 15%;
+        margin-top: 2px;
+    }
+
+    .flex-container-fisk {
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid-container-fisk {
+        display: grid;
+        grid-template-columns: 420px 500px;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    .grid-item {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .fisk-item1 {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+
+    .fisk-item2 {
+        grid-column: 1;
+        grid-row: 2 / span 2;
+    }
+
+    .fisk-item3 {
+        grid-column: 1;
+        grid-row: 4 / span 2;
+    }
+
+    .fisk-item4 {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    .fisk-item5 {
+        grid-column: 2 / span 2;
+        grid-row: 3;
+    }
+
+    .fisk-item6 {
+        grid-column: 2 / span 2;
+        grid-row: 4;
+    }
+
+    .fisk-item7 {
+        grid-column: 2 / span 2;
+        grid-row: 5;
+    }
+
+    .fisk-item8 {
+        grid-column: 3;
+        grid-row: 5;
+    }
+
+    .fisk-item9 {
+        grid-column: 2;
+        grid-row: 6;
+    }
+
+    .fisk-item10 {
+        grid-column: 3;
+        grid-row: 6;
+    }
+
 
     .flex-container-kvittering,
     .flex-container-kontakt {
@@ -1127,5 +1135,8 @@ footer {
         margin-right: 40%;
     }
 
+    #anmeldelser {
+        flex-direction: row;
+    }
 
 }

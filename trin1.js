@@ -43,8 +43,8 @@ const leveringsmuligheder = document.getElementsByName("levering");
 const betalingsmuligheder = document.getElementsByName("betaling");
 const knap = document.getElementById("knap");
 
-//SessionStorage bruges til at gemme de valg man tager gennem id.
 
+//SessionStorage bruges til at gemme de valg man tager gennem id.
 
 knap.addEventListener("click", function () {
     sessionStorage.setItem("navn", brugernavn.value);
