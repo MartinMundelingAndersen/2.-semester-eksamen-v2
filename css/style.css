@@ -382,7 +382,9 @@ label {
     margin-left: 5px;
 }
 
-.button-forside {
+#button-vinmagere,
+#button-smagekasse,
+#button-mad {
     background-color: #68764e;
     border-radius: 20px;
     color: white;
@@ -1010,7 +1012,9 @@ footer {
         border-radius: 100px;
     }
 
-    .button-forside {
+    #button-vinmagere,
+    #button-smagekasse,
+    #button-mad {
         margin-left: 50px;
     }
 

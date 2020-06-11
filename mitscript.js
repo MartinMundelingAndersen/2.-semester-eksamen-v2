@@ -32,3 +32,26 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 4000); // skifter billed hver 4 sek.
 }
+
+//Forside knapper konstanter
+
+const knapmad = document.getElementById("button-mad");
+const knapvinmagere = document.getElementById("button-vinmagere");
+
+const knapsmagekasser = document.getElementById("button-smagekasse");
+
+//Funktion forside knapper
+
+knapmad.addEventListener("click", function () {
+    location.href = "mad.html"
+})
+
+
+
+knapsmagekasser.addEventListener("click", function () {
+    location.href = "smagkasser.html"
+})
+
+knapvinmagere.addEventListener("click", function () {
+    location.href = "vinmagere.html"
+})
