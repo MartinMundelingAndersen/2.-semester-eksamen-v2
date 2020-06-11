@@ -47,7 +47,6 @@ knapmad.addEventListener("click", function () {
 })
 
 
-
 knapsmagekasser.addEventListener("click", function () {
     location.href = "smagkasser.html"
 })
